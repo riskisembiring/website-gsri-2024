@@ -1,0 +1,76 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal.open {
+    display: flex;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px; /* Maximum width for larger screens */
+    max-height: 80%;
+    overflow-y: auto; /* This will enable scroll on mobile */
+    border-radius: 10px;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .image-frame {
+    border: 4px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-frame:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-image {
+    width: 100%; /* Sesuaikan dengan lebar container */
+    height: 100%; /* Sesuaikan dengan tinggi container, bisa juga auto */
+    object-fit: cover; /* Menjaga proporsi gambar dan mengisi container */
+    border-radius: 10px; /* Tambahan untuk styling */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .close-button:hover {
+    background-color: #ff3b3b;
+  }
+  

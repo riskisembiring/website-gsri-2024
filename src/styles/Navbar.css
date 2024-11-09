@@ -1,0 +1,130 @@
+.navbar {
+    position: sticky;
+    z-index: 1000;
+    top: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Ensures space is created for the toggle button */
+  }
+  
+  .logo-image {
+    width: 50px;
+    height: 50px; /* Make the logo a square to make it circular */
+    border-radius: 50%; /* Makes the logo circular */
+    margin-right: 10px; /* Spacing between logo and text */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    white-space: normal; /* Allow text to break into multiple lines if necessary */
+    overflow: hidden; /* Ensure no text overflows */
+    text-overflow: ellipsis; /* Adds ellipsis if the text overflows */
+    max-width: 100%; /* Prevents overflow by ensuring the width is 100% */
+    word-wrap: break-word; /* Allows long words to break and wrap */
+  }
+  
+  /* Navbar Links Styles */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #f0a500; /* Highlight color on hover */
+  }
+  
+  /* Mobile Menu Styles */
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto; /* Align to the right side */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #333;
+        color: white;
+        font-family: Arial, sans-serif;
+        position: relative;
+        flex-direction: column;
+    }
+  
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 110%; 
+      }
+    
+      .navbar-brand {
+        font-size: 1rem; 
+        text-align: left; 
+        width: 100%; 
+        margin: 0; 
+        white-space: normal; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    
+      .navbar-links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 1rem;
+      }
+    
+      .navbar-links.active {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .navbar-links li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        flex-direction: column;
+      }
+    
+      .navbar-toggle {
+        display: block;
+        margin-left: auto; 
+        flex-direction: column;
+      }
+  }
+  

@@ -1,0 +1,57 @@
+.leader-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .text-content {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .text-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #555; /* Warna teks deskripsi */
+  }
+  
+  .text-content p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .text-content button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .text-content button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-content {
+    flex: 0.5;
+  }
+  
+  .image-content img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  

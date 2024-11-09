@@ -1,0 +1,35 @@
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 50px; 
+  }
+  
+  .bible-verses {
+    flex: 1;
+    max-width: 100%;
+    font-size: 18px;
+    padding-right: 20px;
+    text-align: justify; 
+  }
+  
+  .bible-verses p {
+    margin-bottom: 16px;
+  }
+  
+  .bible-image img {
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 769px) {
+    .home-content {
+        margin-top: 5vh;
+    }
+  }
+  

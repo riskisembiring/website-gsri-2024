@@ -1,0 +1,116 @@
+/* Container styling */
+.form-container, .wa-container {
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+  }
+  
+  /* Grid display for wider screens */
+  @media (min-width: 768px) {
+    .form-container, .wa-container {
+      width: 45%;
+    }
+  
+    .form-wrapper {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Heading style */
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form elements styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Textarea specific styling */
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Button styling */
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* WhatsApp section styling */
+  .wa-container {
+    text-align: center;
+    background-color: #e6f7ff;
+    border: 1px solid #b3e5fc;
+  }
+  
+  .wa-container a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .wa-container a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  .whatsapp-button {
+    background-color: #25D366; /* Warna hijau khas WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128C7E; /* Warna hijau gelap saat hover */
+  }
+  

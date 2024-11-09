@@ -1,0 +1,26 @@
+.go-to-map {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .go-to-map-btn {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .go-to-map-btn:hover {
+    background-color: #45a049; /* Warna lebih gelap saat hover */
+  }
+  
+ @media (max-width: 769px) {
+    .map-container iframe {
+      width: 85%;  /* Lebar penuh pada layar kecil */
+      height: 300px;  /* Tinggi lebih kecil, bisa disesuaikan */
+    }
+  }
+  
