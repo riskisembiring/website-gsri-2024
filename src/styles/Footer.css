@@ -25,6 +25,12 @@
     margin: 5px 0;
     font-size: 0.95rem;
   }
+
+  .footer-section a:hover {
+    color: #010922;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
   
   .social-icons {
     display: flex;
@@ -39,7 +45,7 @@
   }
   
   .social-icons a:hover {
-    color: #f9d342; /* Hover color */
+    color: #f9d342;
   }
   
   .footer-bottom {

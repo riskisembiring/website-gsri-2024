@@ -3,6 +3,7 @@ import { Button, Modal,  Table } from "antd"; // Import komponen Table dari Ant 
 import { natalData, NatalEvent } from "../interfaces/interfaces.tsx";
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
+import "../styles/TableNatal.css";
 
 interface ModalProps {
   onCancel: () => void; // Declare the prop type for onCancel function
@@ -49,14 +50,6 @@ const Tablenatal: React.FC<ModalProps> = ({ onCancel  }) => {
       render: (text: string) => text || "-",
     },
   ];
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
 
   const handleRowClick = (row) => {
     setSelectedRow(row);
@@ -115,7 +108,7 @@ const Tablenatal: React.FC<ModalProps> = ({ onCancel  }) => {
           dataSource={natalData}
           columns={columns}
           rowKey="tanggal"
-          // style={{ width: "100%", height: "400px" }}
+          className="responsive-table"
           onRow={(record) => {
             return {
               onClick: () => handleRowClick(record),

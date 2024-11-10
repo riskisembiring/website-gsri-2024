@@ -23,7 +23,7 @@ const ChurchFooter = () => {
           <p>Email: infoGsri@gmail.com</p>
           <p>Telepon: +123 456 7890</p>
           <p>Alamat: Jalan Letjen Jamin Ginting, Medan Tuntungan, Sidomulyo, Medan, Kota Medan, Sumatera Utara 20137</p>
-          <a style={{color: 'white', textDecoration: 'none'}} href="https://example.com">Website: http://www.gsri.org</a> 
+          <a style={{ textDecoration: 'none'}} href="https://website-gsri-2024.vercel.app/">Website: https://website-gsri-2024.vercel.app/</a> 
         </div>
 
         <div className="footer-section services">

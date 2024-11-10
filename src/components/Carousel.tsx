@@ -11,7 +11,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentSubTextIndex, setCurrentSubTextIndex] = useState(0);
   
-  const texts = ["Syaloom!", "Selamat Datang Di Gereja Sidang Rohul Kusus Indonesia", "Bersatu dalam iman, pengharapan, dan kasih", "Tuhan Yesus Memberkati"];
+  const texts = ["Syaloom!", "Selamat Datang Di Gereja Sidang Rohul Kudus Indonesia", "Bersatu Dalam Iman, Pengharapan, Dan Kasih", "Tuhan Yesus Memberkati"];
   const subTexts = ["We are glad you are here", "Experience the love of Christ", "Stay connected with us", "Join our family today!"];
 
   useEffect(() => {

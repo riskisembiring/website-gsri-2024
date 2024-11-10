@@ -45,7 +45,7 @@ const ImageModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             ))}
           </div>
         )}
-        <button className="close-button" onClick={handleClose}>Close</button>
+        <button className="close-button" onClick={handleClose}>X</button>
       </div>
     </div>
   );
